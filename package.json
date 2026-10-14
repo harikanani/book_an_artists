@@ -1,0 +1,28 @@
+{
+  "name": "book-an-assistant",
+  "version": "1.0.0",
+  "description": "A small booking API for the Senior Backend Engineer assignment",
+  "main": "src/server.js",
+  "scripts": {
+    "prestart": "node scripts/seed.js",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "jest --runInBand"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "mysql2": "^3.15.2"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
